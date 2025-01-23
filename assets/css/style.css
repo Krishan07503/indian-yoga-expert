@@ -1,0 +1,1934 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+@font-face {
+  font-family: "typo gotika";
+  src: url("../font/typo-gotika/typo-gotika.light-demo.otf") format(opentype);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "typo gotika";
+  src: url("../font/typo-gotika/typo-gotika.demo.otf") format(opentype);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "typo gotika";
+  src: url("../font/typo-gotika/typo-gotika.demo-bold.otf") format(opentype);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "typo gotika";
+  src: url("../font/typo-gotika/typo-gotika.black-demo.otf") format(opentype);
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #0381f8;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --light-pink-color: #ece7e3;
+  --primary-font: "Kumbh Sans", serif;
+  /* --secondary-font: "Mont", sans-serif; */
+  --navbar-font: "typo gotika";
+}
+
+p {
+  font-size: 0.99rem !important;
+}
+
+header {
+  background-color: var(--primary-color);
+  /* color: var(--white-color); */
+}
+.custom-navbar {
+  padding: 0.3rem;
+}
+.custom-navbar button,
+.custom-navbar a {
+  font: 400 1rem var(--navbar-font);
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+}
+.custom-navbar a:hover {
+  color: var(--white-color);
+}
+.login-btn {
+  border: 1px solid var(--white-color);
+  border-radius: 1rem;
+  padding: 8px 0;
+  width: 85%;
+  text-align: center;
+}
+.search-icon-box input {
+  margin-left: 1.5rem;
+  border: none;
+  padding: 0.7rem;
+}
+.search-icon-box {
+  border: 1px solid var(--white-color);
+  border-radius: 1.5rem;
+  width: 540px;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 1rem;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+}
+.search-icon-box button {
+  border: 1px solid var(--primary-color);
+  border-radius: 1.5rem;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  float: right;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+.fa-solid {
+  color: var(--primary-color);
+}
+.home-img-slider img {
+  width: 37rem !important;
+  /* margin-left: auto; */
+  margin: auto;
+}
+
+.header-side-bar a {
+  font-family: var(--primary-font);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.header-side-bar li {
+  list-style-type: none;
+  padding: 1rem;
+}
+.header-slider-right li.active a,
+.header-slider-right li:hover a {
+  color: var(--white-color);
+}
+.header-slider-right li:hover {
+  background-color: var(--primary-color);
+  border-radius: 0.7rem;
+}
+.header-slider-right li.active {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 0.7rem;
+}
+
+.home-slider-box img {
+  height: 90vh;
+  width: 100% !important;
+}
+
+.search-custom {
+  /* background-color: #e9e9e9; */
+  position: absolute;
+  /* display: none; */
+  top: 2rem;
+  width: 100%;
+  height: 90vh;
+  z-index: 2;
+}
+.home-serch-box {
+  /* height: 75vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.popular-searches p {
+  text-align: center;
+  /* margin: 1rem; */
+  /* font: 100 .5rem var(--primary-font); */
+  font: 100 0.5rem var(--primary-font);
+  font-size: 0.9rem;
+  font-weight: 350;
+}
+.popular-searches p span {
+  font-family: var(--primary-font);
+  font-weight: 550;
+  font-size: 1rem;
+}
+.home-serch-box .popular-searches p span {
+  padding: 0.5rem;
+}
+.mindful-practices-custom {
+  /* margin: 1rem; */
+  padding: 5rem 4rem;
+  background-image: url("../images/about-indian-yoga-expert-bg.jpg");
+}
+.about-indian-yoga-box {
+  padding: 3rem 2rem 0 0;
+}
+.about-indian-yoga-box h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.about-indian-yoga-box p {
+  font-size: 0.99rem;
+  font-weight: 300;
+}
+.about-indian-yoga-box h1 {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  width: 81%;
+  line-height: 3rem;
+}
+/* .about-indian-yoga-content-box  --is this use property for other tag as well */
+.about-indian-yoga-content-box h1 span {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 2rem;
+}
+.about-indian-yoga-content-box p {
+  padding-bottom: 1.5rem;
+}
+.about-indian-yoga-content-box h5 {
+  font-weight: 400;
+}
+.about-indian-yoga-content-box * {
+  font-family: var(--primary-font);
+  /* text-align: center; */
+}
+.about-indian-yoga-content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  /* padding: 4rem 0; */
+}
+
+.mindful-btn {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 2rem;
+  color: var(--primary-color);
+  padding: 0.5rem 2rem;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: all 0.6s ease-in-out;
+}
+.mindful-btn:hover {
+  background-color: var(--primary-color);
+  transition: all 0.6s ease-in-out;
+  color: var(--white-color);
+}
+
+.our-techers-btn-box {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: end;
+  justify-content: flex-end;
+}
+.our-teachers-custom h1 {
+  padding-bottom: 1.5rem;
+}
+.our-teachers-custom h5 {
+  font-weight: 100;
+}
+.our-teacher-slider {
+  padding-top: 2rem;
+}
+
+.our-teachers-slider.owl-theme .owl-nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 0.5rem 2rem 0 0;
+}
+.our-teachers-slider.owl-theme .owl-nav button:hover {
+  background: none;
+}
+.our-teachers {
+  padding: 3rem 4rem;
+  background-image: url("../images/our-teacher-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  /* background-color: red; */
+}
+.heading-content h1 {
+  font: 600 2.5rem var(--primary-font);
+  line-height: 3rem;
+}
+.heading-content h1 span {
+  color: var(--primary-color);
+}
+.heading-content p {
+  font: 300 0.9rem var(--primary-font);
+  line-height: 1.45rem;
+}
+.heading-content h5 {
+  font: 400 1.011rem var(--primary-font);
+  line-height: 1.5rem;
+}
+.our-techers-btn-box {
+  padding-bottom: 1rem;
+}
+.heading-teacher-content {
+  position: absolute;
+  left: 1rem;
+  bottom: 0.8rem;
+}
+.heading-teacher-content h5 {
+  font-weight: 300;
+}
+.heading-teacher-content h5 span {
+  font-size: 0.65rem;
+  font-weight: 200;
+}
+.heading-teacher-content p {
+  font-weight: 200;
+  font-size: 0.955rem;
+}
+
+.teachers-content * {
+  font-family: var(--primary-font);
+  color: var(--white-color);
+}
+
+.our-teacher-slide-text-img-box {
+  position: relative;
+}
+.our-teacher-slide-text-img-box img {
+  border-radius: 1.2rem;
+}
+.our-teacher-slide-text-img-box::before {
+  content: "";
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.9)); */
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  position: absolute;
+  border-radius: 1.2rem;
+}
+.heading-teacher-content img {
+  width: 1rem !important;
+  margin-left: 0.3rem;
+}
+.our-teachers-heading-txt-box {
+  display: flex;
+  align-items: center;
+}
+.our-teacher-offline-online-box {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  color: var(--white-color);
+  font-family: var(--primary-font);
+  font-weight: 250;
+  font-size: 0.75rem;
+  z-index: 1;
+}
+.our-teacher-offline-online-box::before {
+  content: " ";
+  box-shadow: -17px 11px 26px 8px rgba(0, 0, 0, 0.9);
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.our-teacher-review {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 23%;
+}
+.our-teacher-review p {
+  margin: 0;
+  color: var(--white-color);
+  font-size: 0.6rem !important;
+  font-weight: 150;
+}
+.our-teacher-review img {
+  width: 1rem !important;
+}
+.our-teacher-review p {
+  font-family: var(--primary-font);
+}
+.teacher-registration-yoga {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* border: 2px solid black; */
+}
+.teacher-registration-yoga img {
+  /* border: 1px solid black; */
+  width: 9rem;
+  padding-bottom: 3rem;
+}
+.teacher-resistration-yoga-box {
+  background-image: url("../images/about-indian-yoga-expert-bg.jpg");
+  /* border: 1px solid yellow; */
+  border-radius: 1rem;
+  /* width: 80%; */
+  padding: 3rem 1.5rem;
+  /* margin-left: 4rem; */
+  margin-top: 6rem;
+}
+.teacher-resistration-yoga-join-now h5 {
+  font-weight: 400;
+  font-family: var(--primary-font);
+}
+.teacher-resistration-yoga-join-now h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  width: 94%;
+}
+.teacher-resistration-yoga-join-now p {
+  font-size: 0.99rem;
+  width: 90%;
+  padding-left: 2rem;
+  font-weight: 300;
+  font-family: var(--primary-font);
+}
+.teacher-resistration-yoga-join-now h1 span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.teacher-resistration-yoga-join-now button {
+  background-color: transparent;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+.techer-registration-box {
+  position: relative;
+  /* padding: 5rem; */
+  width: 80%;
+}
+.techer-registration-box > img {
+  height: 90vh;
+  object-fit: contain;
+}
+.techer-registration-box .teacher-resistration-box-alert {
+  border: 1px solid var(--white-color);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  position: absolute;
+  top: 10.5rem;
+  right: 3.2rem;
+  color: var(--black-color);
+  background-color: var(--white-color);
+}
+.teacher-resistration-box-alert p {
+  font-family: var(--primary-font);
+  font-weight: 200;
+  margin: 0;
+}
+.teacher-resistration-box-alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.teacher-resistration-box-alert img {
+  width: 1.5rem;
+}
+.teacher-registration-custom {
+  background-image: url("../images/teacher-resistration-bg.jpg");
+  padding-bottom: 50rem;
+  padding-left: 10rem;
+  height: 99vh;
+}
+.teacher-resistration-another-isha {
+  display: flex;
+  position: relative;
+  padding-left: 1rem;
+}
+.teacher-rasistration-item-icon i {
+  font-size: 3.5rem;
+}
+.teacher-resistration-another-isha .item {
+  position: relative;
+  right: 10px;
+  display: flex;
+  padding-right: 0;
+}
+.teacher-resistration-another-isha img {
+  width: 3.5rem;
+  text-align: center;
+}
+
+.teacher-resistration-another {
+  border: 1px solid var(--white-color);
+  background-color: var(--white-color);
+  box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0.05);
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.6)); */
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 6.5rem;
+  left: -6rem;
+  /* width: 70%; */
+  padding: 1rem;
+  /* text-align: center; */
+}
+.teacher-resistration-another p {
+  font-weight: 600;
+  padding-left: 2rem;
+}
+.teacher-resistration-isha-deol h2 {
+  text-align: center;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  margin-top: -4.5rem;
+}
+.teacher-resistration-isha-deol img {
+  width: 2.5rem;
+  text-align: center;
+}
+.teacher-resistration-isha-deol p img {
+  width: 1rem;
+  margin-bottom: 5px;
+}
+.teacher-resistration-isha-deol p span {
+  padding: 0 0 0 0.4rem;
+}
+.affordable-instructor-custom {
+  background-image: url("../images/about-indian-yoga-expert-bg.jpg");
+}
+.affordable-instructor-custom {
+  padding: 5rem;
+}
+.affordable-instructor {
+  width: 80%;
+}
+.affordable-instructor button {
+  background-color: transparent;
+}
+.affordable-instructor h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.affordable-instructor h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+}
+.affordable-instructor p {
+  /* font-size: 1rem; */
+  /* font-weight: 200; */
+  /* padding: 0; */
+  /* padding-top: 1rem; */
+  font-family: var(--primary-font);
+  font-weight: 350;
+  font-size: 0.94rem;
+  line-height: 1.375rem;
+}
+
+.about-image-box img {
+  border-radius: 2rem;
+}
+.yoga-practices-custom {
+  padding: 4rem 3rem;
+  text-align: center;
+}
+.yoga-practices * {
+  width: 100%;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+.yoga-practices h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.yoga-practices h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+.yoga-practices h1 span {
+  color: var(--primary-color);
+}
+.yoga-practices p {
+  font-size: 0.9rem;
+  font-weight: 350;
+  margin: 0;
+}
+.yoga-practices {
+  padding-bottom: 1rem;
+}
+.yoga-practices-step {
+  padding-right: 3.5rem;
+}
+.yoga-practices-step li {
+  position: relative;
+}
+.yoga-practices-step li::after {
+  content: "";
+  width: 1px;
+  height: 7rem;
+  /* border-left: 2px dashed var(--primary-color); */
+  position: absolute;
+  top: 52%;
+  left: -1.625rem;
+  margin-top: 10px;
+  background-image: repeating-linear-gradient(
+    180deg,
+    var(--primary-color),
+    var(--primary-color) 15px,
+    transparent 15px,
+    transparent 28px
+  );
+  background-position: right top;
+  background-repeat: repeat-y;
+  background-size: 2px 100%;
+}
+.yoga-practices-step li:last-child::after {
+  content: "";
+  display: none;
+}
+.yoga-practices-step h5 {
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+.yoga-practices-step h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.yoga-practices-step p {
+  font-size: 1rem;
+  /* text-align: justify; */
+  text-align: left;
+  font-weight: 300;
+  font-family: var(--primary-font);
+}
+.yoga-practices-img-box {
+  padding: 4rem 0 4rem 4rem;
+}
+.yoga-practices-step ul li {
+  display: flex;
+  /* align-items: center; */
+  margin: 10px 0;
+  line-height: 1rem;
+  list-style: none;
+  padding-left: 1rem;
+  position: relative;
+}
+.yoga-practices-step ul {
+  padding-left: 0;
+}
+.yoga-practices-step ul li h1 {
+  position: relative;
+}
+
+/* .yoga-practices-step ul li::before { */
+.yoga-practices-step ul li h1::before {
+  /* display: block; */
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  left: -3.5rem;
+  width: 35px;
+  height: 35px;
+  margin-right: 1rem;
+  background: url("../icons/yoga-practice-right-icon.png") no-repeat;
+
+  background-size: contain;
+  content: "";
+  /* padding-top: 4.5rem; Push content downward, creating space */
+}
+.happy-students-cumstom {
+  padding: 4rem 3rem;
+  background-image: url("../images/about-indian-yoga-expert-bg.jpg");
+}
+.happy-students-img-box img {
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+.happy-students-slider-box {
+  position: relative;
+}
+.happy-students-slider-box img {
+  border-radius: 3rem;
+}
+.happy-students-slider-box::before {
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.9));
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  position: absolute;
+  border-radius: 0 0 3rem 3rem;
+}
+.happy-students-slider-box-quotes::before {
+  content: "";
+  background: none;
+}
+.happy-students-slider-box .happy-students-quotes {
+  width: 6rem !important;
+  height: 6rem;
+  margin: 0 auto;
+}
+.happy-students-slider-box-quotes {
+  padding: 1rem 0;
+  background-color: var(--white-color);
+  border-radius: 3rem;
+}
+.happy-students-slider-box h4 {
+  padding-top: 1rem;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+.happy-students-slider-box h5 {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 400;
+}
+.happy-students-slider-box p {
+  width: 100%;
+  padding: 2.2rem;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 200;
+  color: var(--black-color);
+}
+.happy-students-slider-box-quotes .happy-students-uppr-quotes {
+  height: 2.5rem;
+  position: relative;
+  top: 0;
+  left: -160px;
+}
+.happy-students-slider-box-quotes .happy-students-lwr-quotes {
+  height: 2.5rem;
+  position: relative;
+  top: 1rem;
+  right: -150px;
+}
+.happy-students-slider-box-trainer {
+  display: flex;
+  /* gap: 8rem; */
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+}
+.happy-students-slider-box-trainer h4 {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--white-color);
+}
+.happy-students-slider-box-trainer h5 {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--white-color);
+}
+.happy-students-slider-box-trainer img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.happy-students-slider-box-trainer-push-icon button:focus {
+  border: none;
+}
+
+.faqs-custom {
+  padding: 5rem 3rem;
+}
+.faq-drop-down h4 {
+  /* color: red; */
+  font-family: var(--primary-font);
+  font-weight: 450;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+.faq-drop-down {
+  padding: 0 2rem;
+}
+.faqs-ques {
+  padding: 2rem 5rem 0rem 5rem;
+}
+.home-faq .home-faq-down .accordion-button::after {
+  background-image: url("../icons/home-faq-down-arrow-bold.png");
+  background-size: 1.6rem;
+
+  width: 1.8rem;
+  height: 1.8rem;
+  background-position: center;
+  padding-right: 2rem;
+  font-weight: 500;
+}
+.footer-custom {
+  background-color: var(--black-color);
+  padding: 3rem;
+}
+.footer-about-us * {
+  color: var(--white-color);
+}
+.footer-about-us-element {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-about-us h4 {
+  /* padding: 0 0 1rem 3.2rem; */
+  padding-bottom: 2rem;
+  font-family: var(--primary-font);
+  font-size: 1.7rem;
+}
+.footer-about-us li {
+  padding: 0rem 0 1rem 0;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.footer-copyright {
+  color: var(--white-color);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 200;
+  font-size: 0.7rem;
+  position: relative;
+  margin-top: 3rem;
+}
+.footer-copyright::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20%;
+  height: 0.5px;
+  width: 60%;
+  background-color: var(--white-color);
+}
+.footer-about-us-element a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.footer-about-us-element img {
+  padding-right: 2rem;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent; /* Remove default active background */
+  color: inherit; /* Keep the text color consistent */
+  box-shadow: none; /* Remove any shadow if present */
+}
+
+.accordion-button {
+  transition: background-color 0.3s, color 0.3s;
+}
+.accordion-header {
+  /* border: 2px solid var(--black-color); */
+  border-radius: 1.5rem;
+}
+.faqs-ques .accordion-item {
+  border: none;
+  /* border-radius: 1.5rem ; */
+  border-radius: 1rem !important;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 5px -1px #5148485c;
+}
+
+.accordion-button {
+  /* border: .5px solid var(--black-color); Removes the button border */
+  border-radius: 1rem !important;
+  box-shadow: none; /* Removes any shadow */
+  outline: none; /* Removes outline */
+}
+
+.accordion-button:focus {
+  box-shadow: none; /* Removes focus shadow */
+}
+
+/* Teacher Profile */
+
+.read-more-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in;
+}
+
+.about-dr-deeksha p span {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.read-more-btn span i {
+  transition: transform 0.5s ease-in;
+}
+
+.dr-deeksha {
+  /* border: 1px solid green; */
+  border-radius: 0.8rem;
+  padding: 2rem;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+}
+
+.dr-deeksha h3 {
+  text-align: center;
+  padding-top: 1rem;
+  margin: 0;
+  font-family: var(--primary-font);
+}
+.dr-deeksha p {
+  text-align: center;
+  padding: 0 0 1rem 0;
+  margin: 0;
+  font-family: var(--primary-font);
+  font-weight: 300;
+}
+.deeksha-profile-custom {
+  padding: 4rem 0rem 5rem 3rem;
+}
+.dr-deeksha-location {
+  display: flex;
+  justify-content: space-between;
+}
+.dr-deeksha-location .dr-deeksha-location-right-value {
+  text-align: end;
+}
+.dr-deeksha-location .dr-deeksha-location-right-value li {
+  font-weight: 300;
+}
+.dr-deeksha-location li {
+  list-style-type: none;
+  padding-bottom: 1rem;
+  font-family: var(--primary-font);
+  font-weight: 500;
+}
+.dr-deeksha-location ul {
+  padding-left: 0;
+  margin-bottom: 0rem;
+}
+.dr-deeksha button {
+  width: 100%;
+  padding: 1rem;
+  font: var(--primary-font);
+  border: 1px solid var(--primary-color);
+  border-radius: 1.5rem;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  font-family: var(--primary-font);
+}
+.dr-deeksha h6 {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 500;
+}
+
+.dr-deeksha img {
+  border-radius: 0.5rem;
+}
+.yoga-main-box {
+  padding: 0 0 0 1.8rem;
+}
+.multiple-yoga-list {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+}
+.multiple-yoga-list::-webkit-scrollbar {
+  display: none;
+}
+.multiple-yoga-list button {
+  /* width: 5rem; */
+  min-width: fit-content;
+  border: 1px solid var(--primary-color);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.about-dr-deeksha h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: var(--primary-font);
+}
+.about-dr-deeksha h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+}
+.about-dr-deeksha h1 span {
+  color: var(--primary-color);
+}
+.about-dr-deeksha p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.read-more-btn {
+  border: none;
+  background: none;
+  color: var(--black-color);
+  padding: 0;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+.read-more-btn i {
+  color: var(--black-color);
+}
+.journey-media {
+  margin-top: 2.2rem;
+}
+.journey-media-slider {
+  margin-top: 2rem;
+}
+.journey-media-slider img {
+  border-radius: 0.5rem;
+}
+.reviews h5 {
+  margin-top: 5rem;
+}
+.reviews-feedback-box {
+  margin-top: 2rem;
+}
+.reviews-feedback-card-box {
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  /* border: 1px solid red; */
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  box-shadow: 0 0 2px 0.1rem rgba(0, 0, 0, 0.2);
+  min-height: 16rem;
+}
+.reviews-card-head {
+  display: flex;
+  gap: 2rem;
+}
+.reviews-card-head img {
+  width: 4rem !important;
+  height: 4rem !important;
+}
+.reviews-card-name h3 {
+  font-size: 1.25rem;
+  font-family: var(--primary-font);
+  font-weight: 400;
+}
+.reviews-card-name .reviews-star {
+  display: flex;
+  gap: 1;
+}
+.reviews-card-name .reviews-star img {
+  width: 1.125rem !important;
+  height: 1rem !important;
+  margin-right: 0.25rem;
+}
+.main-card p {
+  text-align: justify;
+  font-family: var(--primary-font);
+  font-weight: 350;
+  font-size: 0.9rem;
+}
+
+.reviews-faqs-custom {
+  margin: 3rem 4rem 0 0;
+}
+.reviews-faqs-header {
+  margin-bottom: 2rem;
+}
+
+.reviwes-faq-drop-down h4 {
+  /* color: red; */
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 1.125rem;
+  padding: 0.5rem 0;
+}
+.reviwes-faq-drop-down {
+  padding: 0 1rem;
+  border-bottom: 0.001rem solid black;
+}
+
+.reviwes-faq-drop-down .accordion-button::after {
+  background-image: url("../icons/reviews-faqs-arrow-down-icon.png");
+  background-size: 1.6rem;
+
+  width: 2rem;
+  height: 2rem;
+  background-position: center;
+  padding-right: 6rem;
+}
+
+.reviews-expert-yoga {
+  margin-top: 5rem;
+}
+
+.reviews-heading-teacher-content {
+  position: absolute;
+  left: 1rem;
+  bottom: 0.8rem;
+}
+.reviews-heading-teacher-content h5 {
+  font-weight: 200;
+  font-size: 1rem;
+}
+.reviews-heading-teacher-content h5 span {
+  font-size: 0.6rem;
+}
+.reviews-heading-teacher-content p {
+  font-weight: 150;
+  font-size: 0.8rem;
+}
+.reviews-heading-teacher-content img {
+  width: 1.5rem !important;
+  padding-left: 2px;
+  padding-bottom: 6px;
+}
+.reviews-yoga-reviews {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  width: 5.6rem;
+}
+.reviews-yoga-reviews p {
+  margin: 0;
+  color: var(--white-color);
+  font-size: 0.625rem;
+  font-weight: 100;
+  font-family: var(--primary-font);
+  margin-top: 2px;
+}
+.reviews-yoga-reviews img {
+  width: 1rem !important;
+  margin-right: 2px;
+}
+.reviews-offline-online-box {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  color: var(--white-color);
+  font-family: var(--primary-font);
+  font-weight: 250;
+  font-size: 0.75rem;
+  z-index: 1;
+}
+.reviews-offline-online-box::before {
+  content: " ";
+  box-shadow: -17px 11px 26px 8px rgba(0, 0, 0, 0.9);
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.reviews-yoga-shadow::before {
+  content: "";
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  position: absolute;
+  border-radius: 1.2rem;
+}
+.reviews-footer {
+  margin-top: 3rem;
+}
+
+.reviews-item-box button {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.reviews-item-box button img {
+  width: 2rem !important;
+  margin: 0 auto;
+}
+
+.reviews-item-box::before {
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  width: 100%;
+  height: 100% !important;
+  position: absolute;
+  border-radius: 0.5rem;
+}
+
+.istructor-match-custom {
+  background-image: url("../images/teacher-categories-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+}
+.instructor-match-text {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 50rem;
+  padding: 15rem 5rem 0 0;
+}
+.instructor-match-discover h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.instructor-match-discover h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.instructor-match-discover p {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  font-weight: 350;
+}
+.filters-custom {
+  padding: 0rem 2rem;
+}
+.filters-custom .clear-all h5 {
+  font-weight: 400;
+  font-family: var(--primary-font);
+}
+
+.clear-all {
+  /* margin-top: 2.5rem; */
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4.5rem;
+  border-radius: 0;
+}
+
+.filters-custom .col-md-3 {
+  box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.04);
+  padding-right: 2.5rem;
+}
+.price-hour h5 {
+  font-weight: 400;
+  font-family: var(--primary-font);
+  margin-top: 2rem;
+}
+
+/* min and max start */
+
+.middle {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.slider {
+  position: relative;
+  z-index: 1;
+  height: 1px;
+  margin: 19px 17px;
+}
+.slider > .track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+.slider > .range {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 24%;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}
+.slider > .thumb {
+  position: absolute;
+  z-index: 3;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--primary-color);
+  background-color: var(--white-color);
+  border-radius: 50%;
+  /* box-shadow: 0 0 0 0 rgba(98, 0, 238, 0.1); */
+  transition: box-shadow 0.3s ease-in-out;
+}
+.slider > .thumb.left {
+  left: 25%;
+  transform: translate(-15px, -10px);
+}
+.slider > .thumb.right {
+  right: 25%;
+  transform: translate(15px, -10px);
+}
+/* .slider > .thumb.hover {
+  box-shadow: 0 0 0 20px rgba(98, 0, 238, 0.1);
+} */
+/* .slider > .thumb.active {
+  box-shadow: 0 0 0 40px rgba(98, 0, 15, 0.2);
+} */
+
+.multi-range-slider input[type="range"] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  opacity: 0;
+}
+.multi-range-slider input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  -webkit-appearance: none;
+}
+
+.youtube-link {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* min and max end */
+
+.min-max {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.min-max h5 {
+  font-size: 1.01rem;
+  font-weight: 500;
+  font-family: var(--primary-font);
+}
+.min-max button {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  font-weight: 450;
+  font-family: var(--primary-font);
+}
+.city .accordion-item {
+  box-shadow: none;
+  border-bottom: 1px solid var(--primary-color) !important;
+  border-radius: 0 !important;
+  padding-bottom: 1.5rem;
+  margin-bottom: 0 !important;
+}
+.city .accordion-item button {
+  padding: 0;
+  font-size: 1.125rem;
+}
+
+.city .form-check-input[type="checkbox"] {
+  background-color: var(--primary-color);
+  border-radius: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.city .accordion-item .accordion-header button {
+  font-family: var(--primary-font);
+  font-weight: 450;
+  position: relative;
+}
+.city .accordion-item {
+  border: none;
+}
+.city .accordion-button::after {
+  background-image: url("../icons/instructor-plus-icon.png");
+  background-size: 0.925rem;
+  margin: 0 !important;
+  position: absolute;
+  right: 0;
+}
+
+.city .accordion-button:not(.collapsed)::after {
+  background-image: url("../icons/instructor-minus-icon.png"); /* Change to minus icon */
+  transform: rotate(180deg);
+  margin-right: 7px;
+}
+.city .accordion-button::before {
+  background-size: 0.925rem;
+  content: "";
+  width: 10px;
+  height: 10px;
+  /* background-position: ; */
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 2rem;
+  bottom: 10px;
+  display: none;
+
+  /* margin-left: auto; */
+}
+
+.city .accordion-button:not(.collapsed)::before {
+  background-image: url("../icons/instructor-search-icon.png"); /* Change to minus icon */
+  margin-bottom: -15px;
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+  display: none;
+  /* display: block; */
+}
+.city .accordion-body {
+  padding: 1rem 0;
+}
+.city .city-child-checkbox {
+  padding-left: 1rem;
+  font-family: var(--primary-font);
+}
+.city .accordion-header button {
+  padding-top: 1.5rem;
+}
+
+.city .accordion-header > button span:last-child {
+  /* margin: ; */
+  margin-left: auto;
+}
+.city .accordion-header span img {
+  width: 17px;
+  height: 17px;
+  margin-right: 2.125rem;
+}
+.istructor-yoga-icon {
+  display: flex;
+  gap: 5rem;
+  padding-left: 1rem;
+  margin-top: 3rem;
+}
+.istructor-yoga-icon img {
+  width: 6.5rem !important;
+  margin: 0 auto;
+}
+.istructor-yoga-icon p {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 1.005rem;
+  font-weight: 400;
+}
+.yoga-instrutor-nearby {
+  margin-left: 2rem;
+}
+.yoga-instructor-nearby-text h1 {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: var(--primary-font);
+}
+.yoga-instructor-nearby-text p {
+  margin: 0;
+  padding-top: 0.5rem;
+  font-family: var(--primary-font);
+}
+.yoga-instructor-nearby-text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.yoga-instructor-nearby-button {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+}
+.yoga-instructor-nearby-button button {
+  font-family: var(--primary-font);
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: 350;
+}
+.yoga-instructor-nearby-button button:hover {
+  color: var(--white-color);
+}
+.yoga-instructor-nearby-button button:focus {
+  color: var(--white-color) !important;
+  border: none;
+}
+.yoga-instructor-nearby-button button span {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+.yoga-instructor-nearby-button .dropdown-toggle::after {
+  border: none;
+  content: " ";
+  background-image: url("../icons/categories-yoga-instructor-down-arrow-white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 8px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--white-color);
+  margin: 0 5px 0 50px;
+}
+.instructor-priya-box {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 3rem 1.5rem;
+  padding-left: 2rem;
+}
+
+.instructor-priya-child-box-text h1 {
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+  font-size: 1.029rem;
+  font-weight: 400;
+  font-family: var(--primary-font);
+}
+.instructor-priya-child-box-text p {
+  margin: 0;
+  /* padding-right: .5rem; */
+}
+.instructor-priya-child-box-content p {
+  font-family: var(--primary-font);
+
+  font-weight: 300;
+  font-size: 0.825rem;
+}
+.instructor-priya-child-box-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 0.7rem;
+}
+.instructor-priya-box {
+  margin-top: 2rem;
+}
+.instrutor-priya-child-box img {
+  /* margin-top: 2rem; */
+  border-radius: 1rem;
+}
+.instructor-load-more {
+  text-align: center;
+  margin: 2.5rem 0 4rem 2rem;
+}
+.instructor-load-more button {
+  font-family: var(--primary-font);
+  padding: 0.3rem 1.25rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 2rem;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  /* width: 11rem; */
+  font-size: 1.1rem;
+}
+.instructor-load-more button span {
+  padding-left: 0.5rem;
+}
+
+/* button span {
+  padding-left: 1rem;
+} */
+.view-all button {
+  padding: 0.3rem 2rem;
+}
+
+.categories-faq .categories-faq-down .accordion-button::after {
+  background-image: url("../icons/home-faq-down-arrow-bold.png");
+  background-size: 1.6rem;
+
+  width: 1.8rem;
+  height: 1.8rem;
+  background-position: center;
+  padding-right: 2rem;
+  font-weight: 500;
+}
+
+.instructor-yoga-practices {
+  background-image: url("../images/about-indian-yoga-expert-bg.jpg");
+}
+.istructor-yoga-practice h5 {
+  font-family: var(--primary-color);
+  font-weight: 450;
+  font-size: 1rem;
+}
+.istructor-yoga-practice p {
+  padding-top: 1rem;
+  font-family: var(--primary-color);
+  font-weight: 350;
+  font-size: 0.94rem;
+  line-height: 1.375rem;
+}
+
+.instructor-happy-student-custom {
+  background-image: none;
+  padding: 4rem 4rem 0 4rem;
+}
+
+.instructor-happy-student img {
+  border-radius: 1rem;
+}
+.instructor-happy-student-custom .insturctor-student-main-box::before {
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.6));
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  position: absolute;
+  border-radius: 0 0 1rem 1rem;
+}
+.insturctor-student-main-box h4 {
+  padding-top: 1rem;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 800;
+}
+.insturctor-student-main-box h5 {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+.insturctor-student-main-box p {
+  width: 100%;
+  padding: 2.2rem;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 200;
+  color: var(--black-color);
+}
+.instructor-happy-slider-box {
+  display: flex;
+  /* gap: 8rem; */
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 0 0.7rem 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+}
+.instructor-happy-slider-box h4 {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--white-color);
+  text-align: justify;
+}
+.instructor-happy-slider-box h5 {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--white-color);
+  text-align: justify;
+}
+.instructor-happy-slider-box img {
+  height: 3rem;
+}
+
+/* .happy-students-slider-box {
+  position: relative;
+} */
+.instructor-faq-custom {
+  background-image: url("../images/about-indian-yoga-expert-bg.jpg");
+}
+
+.view-all {
+  margin-top: 3rem;
+}
+
+/* about us */
+.about-us-bg img {
+  height: 85vh;
+  width: 100%;
+}
+
+
+
+.about-us-custom{
+  background-image: url("../images/about-us-yoga-experience-bg-img.jpg");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 6rem 4rem 0rem 4rem;
+}
+
+
+.about-us-yoga-experience{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.yoga-experience-imgs{
+  position: relative;
+  height: 100%;
+}
+
+.about-us-yoga-experience-img img{
+  width: 25rem;
+  height: 18rem;
+  border-radius: 1rem;
+
+}
+.yoga-experience-img1{
+  position: absolute;
+  left: 0;
+}
+.yoga-experience-img2{
+  position: absolute;
+  right: 0;
+  top: 12rem;
+}
+
+.yoga-experience-years{
+  background-color: var(--white-color);
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 8rem;
+  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
+  
+  
+}
+.yoga-experience-years h1{
+  font-family: var(--primary-font);
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+.yoga-experience-years p{
+  font-family: var(--primary-font);
+  font-weight: 300;
+ 
+}
+
+
+
+.abut-us-yoga-experiece-meditation{
+  padding-right: 2.2rem;
+}
+
+
+
+
+.about-us-yoga-experience * {
+  font-family: var(--primary-font);
+}
+.about-us-yoga-experience h5 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.about-us-yoga-experience h1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  margin: 0;
+}
+.about-h1-span {
+  padding-bottom: 1rem;
+}
+.about-us-yoga-experience h1 span {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 2rem;
+}
+.about-us-yoga-experience p {
+  padding-top: 1rem;
+  font-weight: 300;
+  font-size: 0.94rem !important;
+  line-height: 1.375rem;
+}
+.about-us-meditation-resources {
+  display: flex;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+.about-us-add-meditation {
+  display: flex;
+  gap: 1rem;
+}
+.add-meditation-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8.43rem;
+}
+.add-meditation-discribe h2 {
+  font-family: var(--primary-font);
+  font-size: 1.34rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  margin: 0;
+}
+.add-meditation-discribe p {
+  font-family: var(--primary-font);
+  font-weight: 300;
+  font-size: 1rem !important;
+  line-height: 1.375rem;
+}
+.about-us-our-mission {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.mission-left {
+  padding-right: 1.5rem;
+}
+.mission-right {
+  padding-left: 1.5rem;
+}
+
+
+.our-vision-discribe h1 {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.our-mission-discribe h1{
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.our-mission-discribe p {
+  font-family: var(--primary-font);
+  font-weight: 300;
+  font-size: 1rem;
+}
+.our-vision-discribe p {
+  font-family: var(--primary-font);
+  font-weight: 300;
+  font-size: 1rem;
+}
+.about-us-mission-custom {
+  background-image: url("../images/about-indian-yoga-expert-bg.jpg");
+  height: 70vh;
+  padding: 0 7rem;
+}
+.our-mission-icon img {
+  width: 20rem;
+  padding-top: 1.78rem;
+}
+.our-achievement-custom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+  display: flex;
+  height: 70vh;
+}
+.our-achievement-certified{
+  display: flex;
+  padding-top: 2rem ;
+  margin-top: 2rem ;
+  gap: 5rem;
+
+}
+
+
+.our-achievement-certified .certified-over-right-border{
+  position: relative;
+  min-height: 100%;
+}
+.our-achievement-certified .certified-over-right-border::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: var(--black-color);
+  transform: rotate(30deg);
+}
+.our-achievement-certified .certified-over p{
+  font-family: var(--primary-font);
+  font-weight: 400 !important;
+  font-size: 1.1rem !important;
+  padding-right: 2rem;
+  width: 90%;
+  
+}
+.our-achievement-certified .certified-over p span{
+  font-family: var(--primary-font);
+  font-weight: 500 !important;
+  font-size: 1.51rem !important;
+}
+.benifits-yoga-custom{
+  background-image: url("../images/about-indian-yoga-expert-bg.jpg");
+  height: 110vh;
+  padding: 5rem 2rem 0 2rem;
+}
+.benifits-yoga-custom .benefits-of-yoga{
+  text-align: center;
+
+}
+.benifits-yoga-custom .benefits-of-yoga p{
+  width: 61%;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+.benifits-yoga-custom .joy-of-yoga{
+  display: flex;
+}
+.joy-of-yoga-list-box .joy-of-yoga-list{
+  display: flex;
+  gap: 1rem;
+/* width: 80%; */
+padding: 1.5rem 1rem;
+}
+.joy-of-yoga-list-box{
+  padding-right: 0 !important;
+}
+.joy-of-yoga-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joy-of-yoga-icon img{
+  width: 12rem;
+}
+.joy-of-yoga-content p{
+  font-size: 1rem !important;
+  font-family: var(--primary-font);
+  font-weight: 300;
+}
+.joy-of-yoga-content h2{
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 1.3rem !important;
+}
+.align-item-right{
+  text-align: right;
+}
